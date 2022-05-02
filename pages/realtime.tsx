@@ -36,10 +36,12 @@ const writeUserData = (
   avatar: string
 ) => {
   set(ref(database, `members/${userId}`), {
+    // set(ref(database, `commands/35058`), {
     userId,
     name,
     city,
     avatar,
+    commandName: 'Шинэ утга',
   })
 }
 
